@@ -1,0 +1,52 @@
+.header {
+    background-color: #f0f8ff;
+    padding: 0 32px;
+
+    .layout {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.logoWrap {
+    img {
+        max-width: 170px;
+    }
+}
+
+.headerSearch {
+    .form {
+        display: flex;
+        gap: 16px;
+    
+        .input {
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            padding: 10px 14px;
+            color: #737373;
+            width: 300px;
+            outline: none;
+        }
+    }
+}
+
+.headerActions {
+    display: flex;
+    gap: 34px;
+
+    .profile, .cart {
+        a {
+            img {
+                width: 34px;
+            }
+
+            :hover {
+                border: 1px solid #737373;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+

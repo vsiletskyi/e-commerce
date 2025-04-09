@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import Product from '../Product/Product';
+import { Link } from 'react-router-dom';
 
 import styles from './ProductsList.module.scss'
-import Product from '../Product/Product';
 
 const ProductsList = () => {
 
@@ -18,7 +19,11 @@ const ProductsList = () => {
         <div className={styles.productsWrap}>
             {products.map((product, i) => {
                 return (
-                    <Product key={i} product={product} />
+                    <div key={i} className={styles.product}>
+                        <Link to={`/product/${product.id}`}>
+                            <Product product={product} />
+                        </Link>
+                    </div>
                 )
             })}
         </div>
